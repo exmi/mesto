@@ -36,7 +36,7 @@ function popUpFormClosed() {
   popUpForm.classList.remove(`popup-form_opened`);
 }
 
-let formElement = popUpForm.querySelector(`.popup-form__button--save`);
+let formElement = popUpForm.querySelector(`.popup-form__savebutton`);
 
 function popUpFormSaved () {
     let newTitle = popUpForm.querySelector(`.popup-form__input--name`).value;

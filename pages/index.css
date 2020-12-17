@@ -35,5 +35,5 @@
 @import url("../blocks/popup/popup-form/__input/popup-form__input--description.css");
 @import url("../blocks/popup/popup-form/__input/popup-form__input--name.css");
 
-@import url("../blocks/popup/popup-form/__button/popup-form__button--cancel.css");
-@import url("../blocks/popup/popup-form/__button/popup-form__button--save.css");
+@import url("../blocks/popup/popup-form/__button/popup-form__savebutton.css");
+@import url("../blocks/popup/popup-form/__button/popup-form__cancelbutton.css");
