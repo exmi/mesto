@@ -1,6 +1,6 @@
 
 @media screen and (min-width: 1024px){
-    .popup-form__input--description{
+    .popup-form__jobinput{
         outline: 0;
         border-width: 0 0 1px;
         width: 358px;
@@ -14,7 +14,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 1023px){
-    .popup-form__input--description{
+    .popup-form__jobinput{
         outline: 0;
         border-width: 0 0 1px;
         width: 238px;
@@ -26,7 +26,7 @@
         padding-bottom: 13px;   
     }
 }
-.popup-form__input--description:focus{
+.popup-form__jobinput:focus{
    
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 2px solid rgba(81, 203, 238, 1);

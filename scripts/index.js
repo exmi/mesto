@@ -13,8 +13,8 @@ var likeIcon = document.querySelectorAll(`.table__like-icon`);
 
 let popUpCover = mainCont.querySelector('.popup');
 let popUpForm = popUpCover.querySelector(`.popup-form`);
-let popUpName = popUpForm.querySelector(`.popup-form__input--name`);
-let popUpDescription = popUpForm.querySelector(`.popup-form__input--description`);
+let popUpName = popUpForm.querySelector(`.popup-form__nameinput`);
+let popUpDescription = popUpForm.querySelector(`.popup-form__jobinput`);
 
 for (var icon of likeIcon) {
   icon.addEventListener('click', likeIconIsClicked);
@@ -39,8 +39,8 @@ function popUpFormClosed() {
 let formElement = popUpForm.querySelector(`.popup-form__savebutton`);
 
 function popUpFormSaved () {
-    let newTitle = popUpForm.querySelector(`.popup-form__input--name`).value;
-    let newText = popUpForm.querySelector(`.popup-form__input--description`).value;
+    let newTitle = popUpForm.querySelector(`.popup-form__nameinput`).value;
+    let newText = popUpForm.querySelector(`.popup-form__jobinput`).value;
     
     profileTitle.textContent = newTitle;
     profileText.textContent = newText;
