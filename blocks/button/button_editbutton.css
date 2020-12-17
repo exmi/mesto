@@ -1,29 +1,29 @@
 @media screen and (min-width: 1024px){
-    .profile__button_editbutton{
+    .button_editbutton{
         width: 24px;
         height: 24px;
         border: none;
         margin-top: 15px;
         background-color: black;
-        background-image: url("../../../images/EditButton.svg");
+        background-image: url("../../images/EditButton.svg");
         background-repeat: no-repeat;
         background-size: cover;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px){
-    .profile__button_editbutton{
+    .button_editbutton{
         width: 18px;
         height: 18px;
         border: none;
         margin: auto 0 auto 0;
         background-color: black;
-        background-image: url("../../../images/EditButton.svg");
+        background-image: url("../../images/EditButton.svg");
         background-repeat: no-repeat;
         background-size: cover;
     }
 
 }
-.profile__button_editbutton:hover{
+.button_editbutton:hover{
     opacity: 0.6;
     cursor: pointer;
 }

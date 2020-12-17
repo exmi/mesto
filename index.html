@@ -18,10 +18,10 @@
             <div class="pop-up">
                 <form class="pop-up__form">
                     <h2 class="pop-up__title">Редактировать профиль</h2>
-                    <input type="text" class="pop-up__input_name">
-                    <input type="text" class="pop-up__input_description">
-                    <button type="button" class="pop-up__button_save" onclick="popUpFormSaved()">Сохранить</button>
-                    <button type="reset" class="pop-up__button_cancel" onclick="popUpFormClosed()"></button>
+                    <input type="text" class="input_name">
+                    <input type="text" class="input_description">
+                    <button type="button" class="button_save" onclick="popUpFormSaved()">Сохранить</button>
+                    <button type="reset" class="button_cancel" onclick="popUpFormClosed()"></button>
                 </form>
             </div>
 
@@ -29,10 +29,10 @@
                 <img src="./images/image.svg" alt="Аватарка Жака Кусто" class="profile__avatar">
                 <div class="profile__info">
                     <h1 class="profile__info-title">Жак-Ив Кусто</h1>
-                    <button type="button" class="profile__button_editbutton" onclick="popUpFormOpened()"></button>
+                    <button type="button" class="button_editbutton" onclick="popUpFormOpened()"></button>
                     <p class="profile__info-text">Исследователь океана</p>        
                 </div>
-                <button type="button" class="profile__button_addbutton"><img src="./images/Vector.svg" alt=""></button>
+                <button type="button" class="button_addbutton"><img src="./images/AddButton.svg" alt="картинка кнопки добавить профиль"></button>
             </section>
 
             <section class="table"> 
@@ -78,13 +78,13 @@
                         <button class="table__like-icon" type="button"></button>
                     </div>
                 </div>
-
             </section>
         </main>
+
         <footer class="footer">
             <p class="footer__text">&#169; Mesto Russia</p>
-
         </footer>    
+
         <script src="./scripts/index.js"></script>
     </body>
 </html>
