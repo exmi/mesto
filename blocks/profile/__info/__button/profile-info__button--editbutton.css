@@ -1,5 +1,5 @@
 @media screen and (min-width: 1024px){
-    .profile-info__button_editbutton{
+    .profile-info__button--editbutton{
         width: 24px;
         height: 24px;
         border: none;
@@ -11,7 +11,7 @@
     }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px){
-    .profile-info__button_editbutton{
+    .profile-info__button--editbutton{
         width: 18px;
         height: 18px;
         border: none;
@@ -23,7 +23,7 @@
     }
 
 }
-.profile-info__button_editbutton:hover{
+.profile-info__button--editbutton:hover{
     opacity: 0.6;
     cursor: pointer;
 }
