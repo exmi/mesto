@@ -1,6 +1,6 @@
 
 @media screen and (min-width: 1024px){
-    .pop-up::before{
+    .popup::before{
         display: none;
         position: fixed;
         content: '';
@@ -16,7 +16,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 1023px){
-    .pop-up::before{
+    .popup::before{
         display: none;
         position: fixed;
         content: '';
@@ -31,6 +31,6 @@
     }
 }
 
-.pop-up__form_opened::before{
+.popup-form_opened::before{
     display: block;
 }

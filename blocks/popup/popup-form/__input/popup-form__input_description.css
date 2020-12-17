@@ -1,30 +1,34 @@
+
 @media screen and (min-width: 1024px){
-    .input_name{
+    .popup-form__input_description{
         outline: 0;
         border-width: 0 0 1px;
         width: 358px;
         height: 14px;
-        margin: 54px auto 0 auto;
+        margin: 30px auto 0 auto;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
-        padding-bottom: 13px;
+        padding-bottom: 13px;   
     }
 }
+
 @media screen and (min-width: 320px) and (max-width: 1023px){
-    .input_name{
+    .popup-form__input_description{
         outline: 0;
         border-width: 0 0 1px;
         width: 238px;
         height: 14px;
-        margin: 54px auto 0 auto;
+        margin: 30px auto 0 auto;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
-        padding-bottom: 13px;
+        padding-bottom: 13px;   
     }
 }
-.input_name:focus{
+.popup-form__input_description:focus{
+   
     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
     border: 2px solid rgba(81, 203, 238, 1);
+
 }

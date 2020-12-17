@@ -1,7 +1,7 @@
 
 
 @media screen and (min-width: 1024px){
-    .pop-up__title{
+    .popup-form__title{
         margin: 34px auto 0 auto;
         font-style: normal;
         font-weight: 900;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 1023px){
-    .pop-up__title{
+    .popup-form__title{
         margin: 25px auto 0 auto;
         font-style: normal;
         font-weight: 900;

@@ -2,19 +2,19 @@ let pageCont = document.querySelector(`.page`);
 let mainCont = pageCont.querySelector(`.container`);
 
 let profileCont = mainCont.querySelector(`.profile`);
-let profileInfo = profileCont.querySelector(`.profile__info`);
-let profileTitle = profileInfo.querySelector(`.profile__info-title`);
-let profileText = profileInfo.querySelector(`.profile__info-text`);
+let profileInfo = profileCont.querySelector(`.profile-info`);
+let profileTitle = profileInfo.querySelector(`.profile-info__title`);
+let profileText = profileInfo.querySelector(`.profile-info__text`);
 
 let tableCont = mainCont.querySelector(`.table`);
 let tableElem = tableCont.querySelector(`.table__element`);
 let elemCont = tableElem.querySelector(`.table__text-container`);
 var likeIcon = document.querySelectorAll(`.table__like-icon`);
 
-let popUpCover = mainCont.querySelector('.pop-up');
-let popUpForm = popUpCover.querySelector(`.pop-up__form`);
-let popUpName = popUpForm.querySelector(`.input_name`);
-let popUpDescription = popUpForm.querySelector(`.input_description`);
+let popUpCover = mainCont.querySelector('.popup');
+let popUpForm = popUpCover.querySelector(`.popup-form`);
+let popUpName = popUpForm.querySelector(`.popup-form__input_name`);
+let popUpDescription = popUpForm.querySelector(`.popup-form__input_description`);
 
 for (var icon of likeIcon) {
   icon.addEventListener('click', likeIconIsClicked);
@@ -25,23 +25,22 @@ function likeIconIsClicked() {
 }
 
 function popUpFormOpened() {
-  popUpCover.classList.add(`pop-up__form_opened`);
-  popUpForm.classList.add(`pop-up__form_opened`);
+  popUpCover.classList.add(`popup-form_opened`);
+  popUpForm.classList.add(`popup-form_opened`);
   popUpName.value = profileTitle.textContent;
   popUpDescription.value = profileText.textContent;
 }
 
 function popUpFormClosed() {
-  popUpCover.classList.remove(`pop-up__form_opened`);
-  popUpForm.classList.remove(`pop-up__form_opened`);
+  popUpCover.classList.remove(`popup-form_opened`);
+  popUpForm.classList.remove(`popup-form_opened`);
 }
 
-let formElement = popUpForm.querySelector(`.button_save`);
+let formElement = popUpForm.querySelector(`.popup-form__button_save`);
 
 function popUpFormSaved () {
-    let newTitle = popUpForm.querySelector(`.input_name`).value;
-    let newText = popUpForm.querySelector(`.input_description`).value
-
+    let newTitle = popUpForm.querySelector(`.popup-form__input_name`).value;
+    let newText = popUpForm.querySelector(`.popup-form__input_description`).value;
     
     profileTitle.textContent = newTitle;
     profileText.textContent = newText;
