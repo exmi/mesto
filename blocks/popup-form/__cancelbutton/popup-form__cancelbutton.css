@@ -5,7 +5,7 @@
         top: -40px;
         width: 48px;
         height: 48px;
-        background-image: url("../../../../images/CloseIcon.svg");
+        background-image: url("../../../images/CloseIcon.svg");
         background-repeat: no-repeat;
         background-color: black;
         outline: none;
@@ -29,7 +29,7 @@
         top: -61px;
         width: 48px;
         height: 48px;
-        background-image: url("../../../../images/CloseIcon.svg");
+        background-image: url("../../../images/CloseIcon.svg");
         background-repeat: no-repeat;
         background-color: black;
         outline: none;

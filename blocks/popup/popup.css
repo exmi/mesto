@@ -31,6 +31,3 @@
     }
 }
 
-.popup-form_opened::before{
-    display: block;
-}

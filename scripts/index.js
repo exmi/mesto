@@ -25,14 +25,14 @@ function likeIconIsClicked() {
 }
 
 function popUpFormOpened() {
-  popUpCover.classList.add(`popup-form_opened`);
+  popUpCover.classList.add(`popup_active`);
   popUpForm.classList.add(`popup-form_opened`);
   popUpName.value = profileTitle.textContent;
   popUpDescription.value = profileText.textContent;
 }
 
 function popUpFormClosed() {
-  popUpCover.classList.remove(`popup-form_opened`);
+  popUpCover.classList.remove(`popup_active`);
   popUpForm.classList.remove(`popup-form_opened`);
 }
 

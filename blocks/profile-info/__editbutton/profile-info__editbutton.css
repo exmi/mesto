@@ -5,7 +5,7 @@
         border: none;
         margin-top: 15px;
         background-color: black;
-        background-image: url("../../../../images/EditButton.svg");
+        background-image: url("../../../images/EditButton.svg");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -17,7 +17,7 @@
         border: none;
         margin: auto 0 auto 0;
         background-color: black;
-        background-image: url("../../../../images/EditButton.svg");
+        background-image: url("../../../images/EditButton.svg");
         background-repeat: no-repeat;
         background-size: cover;
     }
