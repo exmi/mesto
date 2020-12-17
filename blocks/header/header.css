@@ -1,0 +1,18 @@
+@media screen and (min-width: 1024px){
+    .header{
+        position: relative;
+        margin: 45px auto 0 auto;
+        max-width: 880px;
+        height: 74px;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px){
+    .header{
+        margin: 28px 0 0 0;
+    }
+}

@@ -1,0 +1,42 @@
+@media screen and (min-width: 1024px){
+    .pop-up__button_cancel{
+        position: absolute;
+        right: -40px;
+        top: -40px;
+        width: 48px;
+        height: 48px;
+        background-image: url("../../../../images/CloseIcon.svg");
+        background-repeat: no-repeat;
+        background-color: black;
+        outline: none;
+        border: none;
+        background-size: cover;
+        box-sizing: border-box;
+        border-radius: 25px;
+        padding: 0px;
+    }
+}
+
+.pop-up__button_cancel:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+@media screen and (min-width: 320px) and (max-width: 1023px){
+    .pop-up__button_cancel{
+        
+        position: absolute;
+        right: 0px;
+        top: -61px;
+        width: 48px;
+        height: 48px;
+        background-image: url("../../../../images/CloseIcon.svg");
+        background-repeat: no-repeat;
+        background-color: black;
+        outline: none;
+        border: none;
+        background-size: cover;
+        box-sizing: border-box;
+        border-radius: 25px;
+        padding: 0px;
+    }
+}
