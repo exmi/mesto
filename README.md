@@ -1,5 +1,5 @@
 # Проект 4: Место
-[Проект на GH Pages](https://exmi.github.io/russian-travel/)
+[Проект на GH Pages](https://exmi.github.io/mesto/)
 
 ## В проекте использованна адаптивная верстка с применением JavaScript функций. DOM дерево и работа с ним
 
