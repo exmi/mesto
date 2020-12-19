@@ -11,22 +11,21 @@ let formElement = popUpContainer.querySelector(`.popup-form`);
 
 let formTogglePopUp = () => {
   popUpContainer.classList.toggle(`popup_active`);
+  newInputName.value = inputName.textContent;
+  newInputJob.value = inputJob.textContent;
 }
-
-cancelButton.addEventListener('click', formTogglePopUp);
-
-editButton.addEventListener('click', formTogglePopUp);
-
-
-newInputName.value = inputName.textContent;
-newInputJob.value = inputJob.textContent;
 
 function popUpFormSaved (event) {
   event.preventDefault();
-
+  
   inputName.textContent = newInputName.value;
   inputJob.textContent = newInputJob.value;
 
   formTogglePopUp();
 }
+
 formElement.addEventListener('submit', popUpFormSaved);
+
+cancelButton.addEventListener('click', formTogglePopUp);
+
+editButton.addEventListener('click', formTogglePopUp);
