@@ -1,10 +1,10 @@
-.profile__addbutton_size{
+.profile__addbuttonimg{
     width: 22px;
     height: 22px;
     background-color: transparent;
 }
 @media screen and (max-width: 425px){
-    .profile__addbutton_size{
+    .profile__addbuttonimg{
         width: 16px;
         height: 16px;
     }
