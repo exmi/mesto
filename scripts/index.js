@@ -1,26 +1,32 @@
 let pageCont = document.querySelector(`.page`);
 let mainCont = pageCont.querySelector(`.container`);
 let editButton = mainCont.querySelector(`.profile-info__editbutton`);
-let cancelButton = mainCont.querySelector(`.popup-container__cancelbutton`);
+let cancelButton = mainCont.querySelector(`.popup__cancelbutton`);
 let popUpContainer = document.querySelector(`.popup`);
-
+let newInputName = popUpContainer.querySelector(`.popup-form__input_type_name`);
+let newInputJob = popUpContainer.querySelector(`.popup-form__input_type_job`);
+let inputName = document.querySelector(`.profile-info__title`);
+let inputJob = document.querySelector(`.profile-info__text`);
 let formElement = popUpContainer.querySelector(`.popup-form`);
 
-cancelButton.addEventListener('click', () =>{
-  popUpContainer.classList.remove(`popup_active`);
-})
+let formTogglePopUp = () => {
+  popUpContainer.classList.toggle(`popup_active`);
+}
 
-editButton.addEventListener('click', () =>{
-  popUpContainer.classList.add(`popup_active`);
-  /*не могу передать нижних два значений в перменные ошибка на value не можеть = null */
-  popUpContainer.querySelector(`.popup-form__input_name`).value = document.querySelector(`.profile-info__title`).textContent;
-  popUpContainer.querySelector(`.popup-form__input_job`).value = document.querySelector(`.profile-info__text`).textContent;
-})
+cancelButton.addEventListener('click', formTogglePopUp);
+
+editButton.addEventListener('click', formTogglePopUp);
+
+
+newInputName.value = inputName.textContent;
+newInputJob.value = inputJob.textContent;
 
 function popUpFormSaved (event) {
   event.preventDefault();
-  document.querySelector(`.profile-info__title`).textContent = popUpContainer.querySelector(`.popup-form__input_name`).value;
-  document.querySelector(`.profile-info__text`).textContent = popUpContainer.querySelector(`.popup-form__input_job`).value;
-  /*не уверен, нужно ли закрывать форму после нажатия кнопки SUBMIT */
+
+  inputName.textContent = newInputName.value;
+  inputJob.textContent = newInputJob.value;
+
+  formTogglePopUp();
 }
 formElement.addEventListener('submit', popUpFormSaved);
