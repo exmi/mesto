@@ -1,64 +1,26 @@
 let pageCont = document.querySelector(`.page`);
 let mainCont = pageCont.querySelector(`.container`);
+let editButton = mainCont.querySelector(`.profile-info__editbutton`);
+let cancelButton = mainCont.querySelector(`.popup-container__cancelbutton`);
+let popUpContainer = document.querySelector(`.popup`);
 
-let profileCont = mainCont.querySelector(`.profile`);
-let profileInfo = profileCont.querySelector(`.profile-info`);
-let profileTitle = profileInfo.querySelector(`.profile-info__title`);
-let profileText = profileInfo.querySelector(`.profile-info__text`);
+let formElement = popUpContainer.querySelector(`.popup-form`);
 
-let tableCont = mainCont.querySelector(`.table`);
-let tableElem = tableCont.querySelector(`.table__element`);
-let elemCont = tableElem.querySelector(`.table__text-container`);
-var likeIcon = document.querySelectorAll(`.table__like-icon`);
+cancelButton.addEventListener('click', () =>{
+  popUpContainer.classList.remove(`popup_active`);
+})
 
-let popUpCover = mainCont.querySelector('.popup');
-let popUpForm = popUpCover.querySelector(`.popup-form`);
-let popUpName = popUpForm.querySelector(`.popup-form__nameinput`);
-let popUpDescription = popUpForm.querySelector(`.popup-form__jobinput`);
+editButton.addEventListener('click', () =>{
+  popUpContainer.classList.add(`popup_active`);
+  /*не могу передать нижних два значений в перменные ошибка на value не можеть = null */
+  popUpContainer.querySelector(`.popup-form__input_name`).value = document.querySelector(`.profile-info__title`).textContent;
+  popUpContainer.querySelector(`.popup-form__input_job`).value = document.querySelector(`.profile-info__text`).textContent;
+})
 
-for (var icon of likeIcon) {
-  icon.addEventListener('click', likeIconIsClicked);
-}
-
-function likeIconIsClicked() {
-  this.classList.toggle(`table__like-icon_active`);
-}
-
-function popUpFormOpened() {
-  popUpCover.classList.add(`popup_active`);
-  popUpForm.classList.add(`popup-form_opened`);
-  popUpName.value = profileTitle.textContent;
-  popUpDescription.value = profileText.textContent;
-}
-
-function popUpFormClosed() {
-  popUpCover.classList.remove(`popup_active`);
-  popUpForm.classList.remove(`popup-form_opened`);
-}
-
-let formElement = popUpForm.querySelector(`.popup-form__savebutton`);
-
-function popUpFormSaved () {
-    let newTitle = popUpForm.querySelector(`.popup-form__nameinput`).value;
-    let newText = popUpForm.querySelector(`.popup-form__jobinput`).value;
-    
-    profileTitle.textContent = newTitle;
-    profileText.textContent = newText;
-    popUpFormClosed();
-}
-
-
-/*let formElement = popUpForm.querySelector(`.pop-up__form`);
-
-function popUpFormSaved (evt) {
-    evt.preventDefault();
-
-    let newTitle = popUpForm.querySelector(`.pop-up__input_name`).value;
-    let newText = popUpForm.querySelector(`.pop-up__input_description`).value
-
-    
-    profileTitle.textContent = newTitle;
-    profileText.textContent = newText;
+function popUpFormSaved (event) {
+  event.preventDefault();
+  document.querySelector(`.profile-info__title`).textContent = popUpContainer.querySelector(`.popup-form__input_name`).value;
+  document.querySelector(`.profile-info__text`).textContent = popUpContainer.querySelector(`.popup-form__input_job`).value;
+  /*не уверен, нужно ли закрывать форму после нажатия кнопки SUBMIT */
 }
 formElement.addEventListener('submit', popUpFormSaved);
-*/

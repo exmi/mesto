@@ -1,5 +1,6 @@
 .table__image{
-    width: 282px;
+    display: block;
+    max-width: 282px;
     height: 282px;
     margin: 0px;
     padding: 0px;

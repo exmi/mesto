@@ -3,33 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="pages/index.css">
+        <link rel="stylesheet" href="./pages/index.css">
         <title>Mesto</title>
     </head>
 
     <body class="page">
         <header class="header">
             <img src="./images/logo.svg" alt="Картинка заголовка" class="header__logo">
-            <div class="header__bottom-line"></div>
         </header>
         
         <main class="container">
 
-            <div class="popup">
-                <form class="popup-form">
-                    <h2 class="popup-form__title">Редактировать профиль</h2>
-                    <input type="text" class="popup-form__nameinput">
-                    <input type="text" class="popup-form__jobinput">
-                    <button type="button" class="popup-form__savebutton" onclick="popUpFormSaved()">Сохранить</button>
-                    <button type="reset" class="popup-form__cancelbutton" onclick="popUpFormClosed()"></button>
-                </form>
-            </div>
+            <section class="popup">
+                <div class="popup-container">
+                    <button type="button" class="popup-container__cancelbutton"></button>
+                    <form class="popup-form name">
+                        <h2 class="popup-form__title">Редактировать профиль</h2>
+                        <input type="text" class="popup-form__input popup-form__input_name name">
+                        <input type="text" class="popup-form__input popup-form__input_job name">
+                        <button type="submit" class="popup-form__savebutton">Сохранить</button>
+                    </form>
+                </div>
+            </section>
 
             <section class="profile">
-                <img src="./images/image.svg" alt="Аватарка Жака Кусто" class="profile__avatar">
+                <img src="./images/JacquesCousteau.jpg" alt="Аватарка Жака Кусто" class="profile__avatar">
                 <div class="profile-info">
                     <h1 class="profile-info__title">Жак-Ив Кусто</h1>
-                    <button type="button" class="profile-info__editbutton" onclick="popUpFormOpened()"></button>
+                    <button type="button" class="profile-info__editbutton"></button>
                     <p class="profile-info__text">Исследователь океана</p>        
                 </div>
                 <button type="button" class="profile__addbutton"><img src="./images/AddButton.svg" alt="картинка кнопки добавить профиль"></button>
@@ -37,48 +38,50 @@
 
             <section class="table"> 
                 <div class="table__element">
-                    <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Картинка с осабняком" class="table__image">
+                    <img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Картинка с осабняком" class="table__image">
                     <div class="table__text-container">
                         <h2 class="table__title">Карачевск</h2>
                         <button class="table__like-icon" type="button"></button>
                     </div>
                 </div>
                 <div class="table__element">
-                    <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Картинка степи" class="table__image">
+                    <img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Картинка степи" class="table__image">
                     <div class="table__text-container">
                         <h2 class="table__title">Гора Эльбрус</h2>
                         <button class="table__like-icon" type="button"></button>
                     </div>
                 </div>
                 <div class="table__element">
-                    <img src="./images/kirill-pershin-1556355-unsplash.png" alt="Картинка горы" class="table__image">
+                    <img src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Картинка горы" class="table__image">
                     <div class="table__text-container">
                         <h2 class="table__title">Домбай</h2>
                         <button class="table__like-icon" type="button"></button>
                     </div>
                 </div>
                 <div class="table__element">
-                    <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Картинка степи" class="table__image">
+                    <img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Картинка степи" class="table__image">
                     <div class="table__text-container">
                         <h2 class="table__title">Гора Эльбрус</h2>
                         <button class="table__like-icon" type="button"></button>
                     </div>
                 </div>
                 <div class="table__element">
-                    <img src="images/kirill-pershin-1556355-unsplash.png" alt="Картинка горы" class="table__image">
+                    <img src="images/kirill-pershin-1556355-unsplash.jpg" alt="Картинка горы" class="table__image">
                     <div class="table__text-container">
                         <h2 class="table__title">Домбай</h2>
                         <button class="table__like-icon" type="button"></button>
                     </div>
                 </div>
                 <div class="table__element">
-                    <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Картинка с осабняком" class="table__image">
+                    <img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Картинка с осабняком" class="table__image">
                     <div class="table__text-container">
                         <h2 class="table__title">Карачевск-Черкессия</h2>
                         <button class="table__like-icon" type="button"></button>
                     </div>
                 </div>
             </section>
+            
+            
         </main>
 
         <footer class="footer">

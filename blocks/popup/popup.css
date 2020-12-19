@@ -1,33 +1,17 @@
-
-@media screen and (min-width: 1024px){
-    .popup::before{
-        display: none;
-        position: fixed;
-        content: '';
-        width: 100vw;
-        height: 100vh;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: #000;
-        opacity: 0.5;
-    }
+.popup{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;   
 }
-
-@media screen and (min-width: 320px) and (max-width: 1023px){
-    .popup::before{
-        display: none;
-        position: fixed;
-        content: '';
-        width: 100vw;
-        height: 100vh;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: #000;
-        opacity: 0.5;
-    }
+.popup::before{
+    position: fixed;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background:rgba(0, 0, 0, 0.5)
 }
 

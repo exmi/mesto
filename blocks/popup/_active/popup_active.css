@@ -1,3 +1,4 @@
-.popup_active::before{
-    display: block;
+.popup_active{
+    display: flex;
+    z-index: 1;
 }

@@ -1,21 +1,20 @@
-
-@media screen and (min-width: 1024px){
-    .profile-info__title{
-        font-style: normal;
-        font-weight: normal;
-        font-size: 42px;
-        line-height: 48px;
-        margin: 0px;
-    } 
+.profile-info__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+    margin: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+    max-width: 282px
 }
+
+
 @media screen and (min-width: 320px) and (max-width: 1023px){
     .profile-info__title{
-        font-style: normal;
-        font-weight: 500;
         font-size: 27px;
         line-height: 33px;
-        text-align: center;
-        margin: 0px;
         justify-self: end;
     }
 
