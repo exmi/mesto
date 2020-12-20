@@ -6,7 +6,6 @@
     margin: 22px auto 0 auto;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
     max-width: 336px;
 }  
 

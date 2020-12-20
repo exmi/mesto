@@ -10,11 +10,12 @@ let inputJob = document.querySelector(`.profile-info__text`);
 let formElement = popUpContainer.querySelector(`.popup-form`);
 
 let formTogglePopUp = () => {
-  popUpContainer.classList.toggle(`popup_active`);
   if (!popUpContainer.classList.contains(`popup_acitve`)){
     newInputName.value = inputName.textContent;
     newInputJob.value = inputJob.textContent;
   }  
+  popUpContainer.classList.toggle(`popup_active`);
+  
 }
 
 function popUpFormSaved (event) {
